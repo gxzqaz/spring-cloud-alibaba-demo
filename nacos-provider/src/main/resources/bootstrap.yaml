@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: dubbo-provider
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+#  application: 不指定的话就取上面的 spring.application.name
+#    name: dubbo-provider
+#  protocol:
+#    name: dubbo
+#    port: 20880
